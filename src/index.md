@@ -10,7 +10,7 @@ import * as d3 from "npm:d3";
 <section class="project-description">
   <h1>Guac Shock: Avocado Price Scrollytelling Visualization</h1>
   <p>
-  During my CFR internship, I transformed the static <a href="https://www.cfr.org/article/guac-shock-understanding-tariffs-avocados">"Guac Shock: Understanding Tariffs on Avocados"</a> graphic into a dynamic, D3-powered scrollytelling visualization in Observable. As users scroll, an animated stacked-bar chart breaks down import cost, tariff, and profit on avocados from Mexico—making the component fully reusable across datasets. Special thanks to <a href="https://www.cfr.org/staff#:~:text=UI/UX%20Designer-,Michael%20Bricknell,-Data%20Systems%20Designer">Michael</a> and <a href="https://www.cfr.org/bio/will-merrow">Will</a> for their mentorship.
+  During my internship as a Data Visualization Intern at the <a href="https://www.cfr.org/">Council on Foreign Relations</a>, I transformed the static <a href="https://www.cfr.org/article/guac-shock-understanding-tariffs-avocados">"Guac Shock: Understanding Tariffs on Avocados"</a> graphic into a dynamic, D3-powered scrollytelling visualization in Observable. As users scroll, an animated stacked-bar chart breaks down import cost, tariff, and profit on avocados from Mexico—making the component fully reusable across datasets. Special thanks to <a href="https://www.cfr.org/staff#:~:text=UI/UX%20Designer-,Michael%20Bricknell,-Data%20Systems%20Designer">Michael</a> and <a href="https://www.cfr.org/bio/will-merrow">Will</a> for their mentorship.
   </p>
   <h2>Features</h2>
   <ul>
