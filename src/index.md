@@ -563,14 +563,21 @@ updateChart(0);
 
 // Add scroll event listener to handle cases where no section is visible
 window.addEventListener("scroll", () => {
+  // Check if any section is currently intersecting
+  const anyIntersecting = Array.from(secs).some((section) => {
+    const rect = section.getBoundingClientRect();
+    // Consider a section intersecting if it's in or near the viewport
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  });
+
   // If we're near the bottom of the page and no section is intersecting
   if (
     window.scrollY > document.body.scrollHeight - window.innerHeight - 200 &&
     lastVisibleSection > 0
   ) {
     updateChart(lastVisibleSection);
-  } else if (window.scrollY < 100) {
-    // If we're at the top of the page, show section 0
+  } else if (window.scrollY < 300 || !anyIntersecting) {
+    // If we're at the top of the page or no sections are visible, show section 0
     updateChart(0);
   }
 });
