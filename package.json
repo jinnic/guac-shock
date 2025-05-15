@@ -6,7 +6,7 @@
     "build": "observable build",
     "dev": "observable preview",
     "deploy": "observable deploy",
-    "deploy:gh-pages": "npm run build && npx gh-pages -d dist",
+    "deploy:gh-pages": "npm run build && touch dist/.nojekyll && npx gh-pages -d dist --dotfiles",
     "observable": "observable"
   },
   "dependencies": {
