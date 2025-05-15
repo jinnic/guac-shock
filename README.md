@@ -33,17 +33,18 @@ npm run dev
 ```
 
 ## Project Structure
+
 - **src/**: Source files including pages (Markdown files)
 - **src/data/**: Static data files
 - **observablehq.config.js**: App configuration
 
 ## Commands
 
-| Command          | Description                   |
-| ---------------- | ----------------------------- |
-| `npm install`    | Install dependencies          |
-| `npm run dev`    | Start local preview server    |
-| `npm run build`  | Build static site to `./dist` |
-| `npm run deploy` | Deploy to Observable          |
-| `npm run clean`  | Clear data loader cache       |
+| Command                   | Description                   |
+| ------------------------- | ----------------------------- |
+| `npm install`             | Install dependencies          |
+| `npm run dev`             | Start local preview server    |
+| `npm run build`           | Build static site to `./dist` |
+| `npm run deploy`          | Deploy to Observable          |
+| `npm run clean`           | Clear data loader cache       |
 | `npm run deploy:gh-pages` | Deploy to GitHub Pages        |
