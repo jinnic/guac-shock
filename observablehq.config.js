@@ -1,9 +1,9 @@
 // See https://observablehq.com/framework/config for documentation.
 export default {
-  // The app’s title; used in the sidebar and webpage titles.
+  // The app's title; used in the sidebar and webpage titles.
   title: "Guac Shock",
 
-  // The pages and sections in the sidebar. If you don’t specify this option,
+  // The pages and sections in the sidebar. If you don't specify this option,
   // all pages will be listed in alphabetical order. Listing pages explicitly
   // lets you organize them into sections and have unlisted pages.
   // pages: [
@@ -17,10 +17,15 @@ export default {
   // ],
 
   // Content to add to the head of the page, e.g. for a favicon:
-  head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
+  head: '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥑</text></svg>">',
 
   // The path to the source root.
   root: "src",
+
+  // Path configuration for GitHub Pages
+  paths: {
+    base: "/guac-shock", // Replace with your repository name
+  },
 
   // Some additional configuration options and their defaults:
   // theme: "default", // try "light", "dark", "slate", etc.

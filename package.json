@@ -6,12 +6,14 @@
     "build": "observable build",
     "dev": "observable preview",
     "deploy": "observable deploy",
+    "deploy:gh-pages": "npm run build && gh-pages -d dist",
     "observable": "observable"
   },
   "dependencies": {
     "@observablehq/framework": "^1.13.3"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "rimraf": "^5.0.5"
   },
   "engines": {
