@@ -53,7 +53,7 @@ Article by Will Merrow and Andrew Huang
         <span class="price-value">$0.00</span>
       </div>
       <!-- Chart containers for different screen sizes -->
-      <div id="chart-desktop"></div>
+      <div id="chart-svg"></div>
     </div>
   </div>
 </section>
@@ -169,7 +169,7 @@ const y = d3.scaleLinear().range([height - margin.bottom, margin.top]);
 const svg = d3.create("svg").attr("viewBox", [0, 0, width, height]);
 
 // Add SVG to the DOM
-document.getElementById("chart-desktop").appendChild(svg.node());
+document.getElementById("chart-svg").appendChild(svg.node());
 
 // 3) Create utility function for segments
 function getSegments(sectionNum) {
@@ -749,6 +749,12 @@ font-family: var(--sans-serif);
   transition: opacity 0.3s ease;
   margin: 0;
 }
+/* D3 Chart */
+#chart-svg {
+    display: flex;
+    height: 500px;
+    width: 100%;
+  }
 
 /* Price label styling */
 .avocado {
@@ -867,11 +873,6 @@ font-family: var(--sans-serif);
     padding: 2.5rem;
   }
   
-  #chart-desktop {
-    display: flex;
-    height: 500px;
-  }
-  
   #chart-container {
     width: 50%;
   }
@@ -920,8 +921,7 @@ font-family: var(--sans-serif);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
   }
   
-  #chart-desktop {
-    display: flex;
+  #chart-svg {
     justify-content: end;
     width: 70%;
     max-width: 250px;
